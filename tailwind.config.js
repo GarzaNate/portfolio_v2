@@ -23,7 +23,12 @@ export default {
         text: '#FAF0CA',
       },
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'],   // Use Roboto for sans-serif font
+        mono: ['Fira Code', 'monospace'], // Use Fira Code for monospace font
+      },
+    },
   },
   plugins: [ flowbite.plugin() ],
 }

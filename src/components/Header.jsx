@@ -13,15 +13,15 @@ const Header = () => {
     <div>
       <Navbar fluid>
         <Navbar.Brand as={Link} to="/">
-          <span className="self-center text-xl font-semibold whitespace-nowrap text-primary-text dark:text-dark-text">
-            My Portfolio
+          <span className="self-center text-xl font-semibold whitespace-nowrap text-light-text dark:text-dark-text">
+            Josue Garza
           </span>
         </Navbar.Brand>
         <div className="flex md:order-2">
           <DarkThemeToggle />
           <button
             onClick={toggleMenu}
-            className="ml-2 inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700"
+            className="ml-2 inline-flex items-center p-2 text-sm text-light-text rounded-lg md:hidden hover:bg-light-accent dark:text-dark-text dark:hover:bg-dark-accent"
           >
             <svg
               className="w-6 h-6"
@@ -42,31 +42,31 @@ const Header = () => {
         <Navbar.Collapse className={menuOpen ? "block" : "hidden md:flex"}>
           <Link
             to="/"
-            className="text-gray-700 dark:text-white hover:text-blue-500"
+            className="text-light-text dark:text-dark-text hover:text-light-primary dark:hover:text-dark-primary"
           >
             Home
           </Link>
           <Link
             to="/about"
-            className="text-gray-700 dark:text-white hover:text-blue-500"
+            className="text-light-text dark:text-dark-text hover:text-light-primary dark:hover:text-dark-primary"
           >
             About
           </Link>
           <Link
             to="/projects"
-            className="text-gray-700 dark:text-white hover:text-blue-500"
+            className="text-light-text dark:text-dark-text hover:text-light-primary dark:hover:text-dark-primary"
           >
             Projects
           </Link>
           <Link
             to="/skills"
-            className="text-gray-700 dark:text-white hover:text-blue-500"
+            className="text-light-text dark:text-dark-text hover:text-light-primary dark:hover:text-dark-primary"
           >
             Skills
           </Link>
           <Link
             to="/contact"
-            className="text-gray-700 dark:text-white hover:text-blue-500"
+            className="text-light-text dark:text-dark-text hover:text-light-primary dark:hover:text-dark-primary"
           >
             Contact
           </Link>
