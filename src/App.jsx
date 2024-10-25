@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom"; // Using HashRouter for scrolling
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Header from "./components/Header";
@@ -10,16 +10,24 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <div className="scroll-smooth">
       <Router>
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <div id="home">
+          <Home />
+        </div>
+        <div id="about">
+          <About />
+        </div>
+        <div id="projects">
+          <Projects />
+        </div>
+        <div id="skills">
+          <Skills />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
         <Footer />
       </Router>
     </div>

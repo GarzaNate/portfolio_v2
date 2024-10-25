@@ -10,8 +10,8 @@ const Header = () => {
   };
 
   return (
-    <div>
-      <Navbar fluid>
+    <div className="">
+      <Navbar fluid className=" bg-light-background dark:bg-dark-background">
         <Navbar.Brand as={Link} to="/">
           <span className="self-center text-xl font-semibold whitespace-nowrap text-light-text dark:text-dark-text">
             Josue Garza
@@ -41,31 +41,31 @@ const Header = () => {
         </div>
         <Navbar.Collapse className={menuOpen ? "block" : "hidden md:flex"}>
           <Link
-            to="/"
+            to="#home" // Changed to use section IDs
             className="text-light-text dark:text-dark-text hover:text-light-primary dark:hover:text-dark-primary"
           >
             Home
           </Link>
           <Link
-            to="/about"
+            to="#about"
             className="text-light-text dark:text-dark-text hover:text-light-primary dark:hover:text-dark-primary"
           >
             About
           </Link>
           <Link
-            to="/projects"
+            to="#projects"
             className="text-light-text dark:text-dark-text hover:text-light-primary dark:hover:text-dark-primary"
           >
             Projects
           </Link>
           <Link
-            to="/skills"
+            to="#skills"
             className="text-light-text dark:text-dark-text hover:text-light-primary dark:hover:text-dark-primary"
           >
             Skills
           </Link>
           <Link
-            to="/contact"
+            to="#contact"
             className="text-light-text dark:text-dark-text hover:text-light-primary dark:hover:text-dark-primary"
           >
             Contact

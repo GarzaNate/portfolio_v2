@@ -1,12 +1,12 @@
-import React from 'react'
-import Hero from '../components/Hero'
+import React from "react";
+import Hero from "../components/Hero";
 
 const Home = () => {
   return (
-    <div className='font-sans'>
+    <div className="font-sans">
       <Hero />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

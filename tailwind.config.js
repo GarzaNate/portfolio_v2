@@ -1,4 +1,5 @@
 const flowbite = require("flowbite-react/tailwind");
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -9,27 +10,24 @@ export default {
   theme: {
     colors: {
       light: {
-        primary: '#0077B6',
-        secondary: '#00B4D8',
-        accent: '#90E0EF',
-        background: '#F8F9FA',
-        text: '#343A40',
+        primary: '#1A1A1A',        // Soft black for primary elements in light mode
+        background: '#FFFFFF',     // White background
+        text: '#1A1A1A',           // Same soft black for text
+        accent: '#0077B6',         // Chosen accent color
       },
       dark: {
-        primary: '#0D3B66',
-        secondary: '#FAF0CA',
-        accent: '#F4D35E',
-        background: '#1B263B',
-        text: '#FAF0CA',
+        primary: '#E5E5E5',        // Light gray for primary elements in dark mode
+        background: '#121212',     // Matte, soft black background
+        text: '#E5E5E5',           // Light gray text for readability
+        accent: '#0077B6',         // Same accent color as light mode
       },
     },
     extend: {
       fontFamily: {
-        sans: ['Roboto', 'sans-serif'],   // Use Roboto for sans-serif font
-        mono: ['Fira Code', 'monospace'], // Use Fira Code for monospace font
+        sans: ['Roboto', 'sans-serif'],   
+        mono: ['Fira Code', 'monospace'],
       },
     },
   },
-  plugins: [ flowbite.plugin() ],
+  plugins: [flowbite.plugin()],
 }
-
