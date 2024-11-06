@@ -1,6 +1,6 @@
 import React from "react";
 import { HashRouter as Router } from "react-router-dom"; // Using HashRouter for scrolling
-// import About from "./pages/About";
+import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import Home from "./pages/Home";
@@ -16,14 +16,14 @@ function App() {
         <div id="home">
           <Home />
         </div>
-        {/* <div id="about">
+        <div id="about">
           <About />
-        </div> */}
-        <div id="projects">
-          <Projects />
         </div>
         <div id="skills">
           <Skills />
+        </div>
+        <div id="projects">
+          <Projects />
         </div>
         <div id="contact">
           <Contact />

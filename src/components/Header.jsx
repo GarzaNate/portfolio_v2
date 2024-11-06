@@ -11,15 +11,24 @@ const Header = () => {
 
   return (
     <div>
-      <Navbar fluid className="bg-light-background dark:bg-dark-background">
-        <Navbar.Brand as={ScrollLink} to="home" smooth={true} offset={-70} duration={500}>
+      <Navbar
+        fluid
+        className="fixed top-0 left-0 w-full bg-light-background dark:bg-dark-background z-50"
+      >
+        <Navbar.Brand
+          as={ScrollLink}
+          to="home"
+          smooth={true}
+          offset={-70}
+          duration={500}
+          className="cursor-pointer"
+        >
           <span className="self-center text-3xl font-semibold whitespace-nowrap text-light-text dark:text-dark-text">
             Josue Garza
           </span>
         </Navbar.Brand>
 
         <div className="flex items-center md:order-2">
-   
           <button
             onClick={toggleMenu}
             className="ml-2 inline-flex items-center p-2 text-sm text-light-text rounded-lg md:hidden hover:bg-light-accent dark:text-dark-text dark:hover:bg-dark-accent"
@@ -40,8 +49,12 @@ const Header = () => {
             </svg>
           </button>
 
-          <Navbar.Collapse className={`flex ${menuOpen ? "block" : "hidden md:flex"} md:flex-row`}>
-            {['home', 'projects', 'skills', 'contact'].map((section) => (
+          <Navbar.Collapse
+            className={`flex ${
+              menuOpen ? "block" : "hidden md:flex"
+            } md:flex-row`}
+          >
+            {["about", "skills", "projects", "contact"].map((section) => (
               <ScrollLink
                 key={section}
                 to={section}
@@ -55,7 +68,11 @@ const Header = () => {
               </ScrollLink>
             ))}
           </Navbar.Collapse>
-          <DarkThemeToggle className="ml-4" darkThemeClassName="dark" lightThemeClassName="light"/>
+          <DarkThemeToggle
+            className="ml-4"
+            darkThemeClassName="dark"
+            lightThemeClassName="light"
+          />
         </div>
       </Navbar>
     </div>
