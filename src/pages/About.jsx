@@ -12,7 +12,7 @@ const AboutMe = () => {
             About Me
           </h2>
           
-          <Card className="bg-light-card dark:bg-dark-card p-8 shadow-lg rounded-lg transition-all duration-300">
+          <Card className="bg-light-card dark:bg-dark-card p-8 border shadow-lg rounded-lg transition-all duration-300">
             <div className="text-lg text-light-text dark:text-dark-text space-y-4">
               <p>
                 I’m a dedicated and passionate fullstack developer with a knack for problem-solving and a love for learning. With a background in both frontend and backend development, I thrive in creating intuitive and efficient user experiences.
@@ -29,7 +29,7 @@ const AboutMe = () => {
           {/* Hobbies and Interests */}
           <div className="mt-6 flex flex-wrap space-x-4">
             <Badge color="blue" className="p-2 text-lg font-semibold dark:bg-dark-badge">
-              Hiking
+              Food
             </Badge>
             <Badge color="green" className="p-2 text-lg font-semibold dark:bg-dark-badge">
               Music
@@ -38,7 +38,7 @@ const AboutMe = () => {
               Gaming
             </Badge>
             <Badge color="yellow" className="p-2 text-lg font-semibold dark:bg-dark-badge">
-              Photography
+              Brazillian Jiu-Jitsu
             </Badge>
           </div>
         </div>
